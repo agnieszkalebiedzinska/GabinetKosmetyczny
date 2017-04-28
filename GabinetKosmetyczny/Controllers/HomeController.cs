@@ -26,5 +26,11 @@ namespace GabinetKosmetyczny.Controllers
 
             return View();
         }
+        public ActionResult Cennik()
+        {
+            ViewBag.Message = "Cennik";
+
+            return View();
+        }
     }
 }

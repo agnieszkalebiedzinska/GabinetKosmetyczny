@@ -20,6 +20,11 @@ namespace GabinetKosmetyczny.Models
         public string RodzajZabiegu { get; set; }
         public Boolean Potwierdzona { get; set; }
     }
+    public class RodzajZabietu
+    {
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+    }
     public class WizytyDBCtxt : DbContext
     {
         public DbSet<Wizyta> Wizyty { get; set; }

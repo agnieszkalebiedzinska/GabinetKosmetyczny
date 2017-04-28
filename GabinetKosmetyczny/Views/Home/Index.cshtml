@@ -1,31 +1,125 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Gabinet Kosmetyczny";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<div class="page_container">
+    <!--slider-->
+    <div id="main_slider">
+        <div class="camera_wrap" id="camera_wrap_1">
+            <div data-src="img/slider/1.jpg"></div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+            <div data-src="img/slider/3.jpg"></div>
+            <div data-src="img/slider/4.jpg"></div>
+
+        </div><!-- #camera_wrap_1 -->
+        <div class="clear"></div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+
 </div>
+<!--//page_container-->
+<!--footer-->
+<div id="footer">
+    <div class="wrap">
+        <div class="container">
+            <div class="row">
+                @*<div class="span3">
+                    <h2 class="title">Latest tweets</h2>
+                    <div class="tweet_block"></div>
+                </div>
+                <div class="span3">
+                    <h2 class="title">Get in touch!</h2>
+                    <form action="#" method="post">
+                        <input class="span3" type="text" name="name" id="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+                        <input class="span3" type="text" name="email" id="email" value="Email" onFocus="if (this.value == 'Email') this.value = '';" onBlur="if (this.value == '') this.value = 'Email';" />
+                        <textarea name="message" id="message" class="span3" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
+                        <div class="clear"></div>
+                        <input type="reset" class="btn dark_btn" value="Clear form" />
+                        <input type="submit" class="btn send_btn" value="Send!" />
+                        <div class="clear"></div>
+                    </form>
+                </div>
+                <div class="span3">
+                    <h2 class="title">Testimonials</h2>
+                    <ul>
+                        <li>
+                            <span class="testimonials_arrow"></span>Orci nisi, luctus vitae imperdiet a, iquam vel urna. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullamcorper pulvinar, massa libero magna.
+                            <div class="clear"></div>
+                            <div class="author">Anna Smith, Company inc.</div>
+                        </li>
+                        <li>
+                            <span class="testimonials_arrow"></span>Luctus vitae imperdiet a, iquamorci nisi lorem. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullam pulvinar, massa libero consequat egestas mas.
+                            <div class="clear"></div>
+                            <div class="author">John Doe, Company inc.</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="span3">
+                    <h2 class="title">flickr photostream</h2>
+                    <div class="flickrs">
+                        <div class="FlickrImages">
+                            <ul></ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>*@
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <section id="page-1">
+        <div class="container">
+
+            @*<div class="row" id="home-header">
+                <div id="logo" class="span4">
+                    <img src="http://nice-gabinet.pl/wp-content/uploads/2013/11/logo_nice_gabinet.png" alt="Gabinet Kosmetyczny NICE &#8211; Białystok" height="45" />
+                </div>
+                <div class="span3 right" id="mini-slogan" style="float:right">
+                    <p class="adres">Białystok, Lipowa 32 lok. 204</p>
+                    <p class="tel">+48  505 956 978</p>
+                </div>  end slogan 
+            </div>
+            <div class="row three-big" id="slogan">
+                <h1 id="first-title" class="big-title">GABINET KOSMETYKI <span>PROFESJONALNEJ</span></h1>
+                <h1 id="second-title" class="big-title"><span> I LASEROTERAPII</span> WYKONUJEMY ZABIEGI</h1>
+                <h1 id="third-title" class="big-title">Z MEDYCYNY ESTETYCZNEJ I KOSMETOLOGII </h1>
+            </div>
+
+            <div class="row">
+                <nav class=" offset2  span8" id="nav-home">
+                    <ul class="row">
+                        <li class="span2">
+                            <a class="circle-menu circle-black" href="#page-2"><span class="label-link">Oferta</span></a>
+                            <span class="arrow"></span>
+                        </li>
+                        <li class="span2">
+                            <a class="circle-menu" href="#page-3"><span class="label-link">Cennik</span></a>
+                            <span class="arrow"></span>
+                        </li>
+                        <li class="span2">
+                            <a class="circle-menu circle-black" href="#page-4"><span class="label-link">Promocje</span></a>
+                            <span class="arrow"></span>
+                        </li>
+                        <li class="span2">
+                            <a class="circle-menu" href="#page-5"><span class="label-link">Galeria</span></a>
+                            <span class="arrow"></span>
+                        </li>
+                        <li class="span2">
+                            <a class="circle-menu circle-black" href="#page-6"><span class="label-link">KONTAKT</span></a>
+                            <span class="arrow"></span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>*@
+        </div>
+      
+    </section>
+<script type="text/javascript">
+      $(document).ready(function () {
+          //Slider
+          $('#camera_wrap_1').camera();
+
+          //Featured works & latest posts
+          $('#mycarousel, #mycarousel2, #newscarousel').jcarousel();
+      });
+</script>

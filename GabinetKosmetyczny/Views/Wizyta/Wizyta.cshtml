@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Wizyta";
+}
+<div class="page_container">
+    <h2>Wizyta</h2>
+    <div id="footer">
+        <div class="wrap">
+            <div class="container">
+                <div class="row">
+                  
+                    <div class="span3">
+                        <h2 class="title">REZERWACJA</h2>
+                        <form action="#" method="post">
+                            <input class="span3" type="text" name="imie" id="imie" value="Imię" onFocus="if (this.value == 'Imię') this.value = '';" onBlur="if (this.value == '') this.value = 'Imię';" />
+                            <input class="span3" type="text" name="nazwisko" id="nazwisko" value="Nazwisko" onFocus="if (this.value == 'Nazwisko') this.value = '';" onBlur="if (this.value == '') this.value = 'Nazwisko';" />
+                            <input class="span3" type="text" name="telefon" id="telefon" value="Telefon" onFocus="if (this.value == 'Telefon') this.value = '';" onBlur="if (this.value == '') this.value = 'Telefon';" />
+                            <input class="span3" type="text" name="email" id="email" value="Email" onFocus="if (this.value == 'Email') this.value = '';" onBlur="if (this.value == '') this.value = 'Email';" />
+                            <select class="span3" name="rodzaj_zabiegu" id="rodzaj_zabiegu" onFocus="if (this.value == 'Rodzaj zabiegu') this.value = '';" onBlur="if (this.value == '') this.value = 'Rodzaj zabiegu';" >
+                                <option>Wybierz rodzaj zabiegu</option>
+                                <option>Depilacja</option>
+                                <option>Manicure</option>  
+                            </select>
+                            <input class="span3" type="text" id="datepicker" value="Data i godzina" onFocus="if (this.value == 'Data i godzina') this.value = '';" onBlur="if (this.value == '') this.value = 'Data i godzina';" />
+                            <textarea name="message" id="message" class="span3" onFocus="if (this.value == 'Dodatkowe informacje') this.value = '';" onBlur="if (this.value == '') this.value = 'Dodatkowe informacje';">Dodatkowe informacje</textarea>
+                            <div class="clear"></div>
+                            <input type="reset" class="btn dark_btn" value="Sprawdź termin" />
+                            <input type="submit" class="btn send_btn" value="Wyślij!" />
+                            <div class="clear"></div>
+
+                           
+
+                        </form>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div>
+            jakis tekst
+            <p>ViewData</p>
+            <p>@ViewData["tytul"]</p>
+            <p>@ViewData["liczba"]</p>
+            <br><br>
+            <p>ViewBag</p>
+            <p>@ViewBag.tytul2</p>
+            <p>@ViewBag.liczba2</p>
+            <p>@ViewBag.tytul2</p>
+            <p>@ViewBag.liczba2</p>
+            <br>
+        </div>
+    </div>
+    <script>
+
+    $(function () {
+
+        //$("#datepicker").datepicker();
+
+    });
+
+    </script>
